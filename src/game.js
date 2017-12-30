@@ -45,10 +45,11 @@ Game.prototype.hasSnakeEatenFood=function() {
   return this.snake.head.isSameCoordAs(this.food.getPosition());
 }
 
-Game.prototype.updateScoreBoard = function() {
+Game.prototype.updateScore = function() {
   this.scoreInfo.foodEaten +=1;
   this.scoreInfo.score += 10;
-  document.getElementById('scored').innerText = this.scoreInfo.score;
+  updateScoreBoard(this.scoreInfo.score);
+  // document.getElementById('scored').innerText = this.scoreInfo.score;
 };
 
 Game.prototype.createFood=function() {

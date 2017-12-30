@@ -11,6 +11,10 @@ const drawGrids=function(numberOfRows,numberOfCols) {
   }
 }
 
+const updateScoreBoard = function(score) {
+  document.getElementById('scored').innerText= score
+}
+
 const paintCell=function(pos,color) {
   let cell=document.getElementById(pos.getCoord().join("_"));
   if(cell)
@@ -40,5 +44,5 @@ const drawFood=function(food) {
   if(food.isSuperFood())
     paintCell(food.getPosition(),"super-food");
   else
-  paintCell(food.getPosition(),"food");  
+  paintCell(food.getPosition(),"food");
 }
