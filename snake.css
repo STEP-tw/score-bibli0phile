@@ -24,3 +24,11 @@
   background-color: blue;
   border-radius: 50%;
 }
+.score-board {
+  float: right;
+  width: 50%;
+}
+#scored {
+  float:right;
+  width: 95%;
+}
