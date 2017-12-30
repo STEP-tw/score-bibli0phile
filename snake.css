@@ -32,3 +32,7 @@
   float:right;
   width: 95%;
 }
+.super-food {
+  background-color: green;
+  border-radius: 50%;
+}
